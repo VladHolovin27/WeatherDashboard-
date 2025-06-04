@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import styles from './HeaderHome.module.css';
-import WhoWeAre from '../../../pages/WhoWeAre/WhoWeAre';
-import Contacts from '../../../pages/Contacts/Contacts';
-import Menu from '../../../pages/Menu/Menu';
+// import WhoWeAre from '../../../pages/WhoWeAre/WhoWeAre';
+// import Contacts from '../../../pages/Contacts/Contacts';
+// import Menu from '../../../pages/Menu/Menu';
 import homeLogo from '../../../assets/HomeLogo.png';
 import userLogo from '../../../assets/UserLogo.png';
 import SwitchPages from '../../SwitchPages/SwitchPages';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function HeaderHome() {
     const [userName, setUserName] = useState('');
@@ -26,9 +26,9 @@ function HeaderHome() {
                 <div className={styles.leftMenu}>
                     <img className={styles.homeLogo} src={homeLogo} alt="Home logo" />
                     <div className={styles.leftMenuTitles}>
-                        <WhoWeAre />
-                        <Contacts />
-                        <Menu />
+                        <Link to={"/home/whoWeAre"} className={styles.leftMenuTitle}>Who we are</Link>
+                       <Link to={"/home/contacts"} className={styles.leftMenuTitle}>Contacts</Link>
+                        <Link to={"/home/menu"} className={styles.leftMenuTitle}>Menu</Link>
                     </div>
                 </div>
 
