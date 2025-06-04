@@ -1,0 +1,62 @@
+.footerHome {
+  background-color: rgb(212, 150, 92);
+  padding: 40px 20px;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.footerWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerBlocks {
+  display: flex;
+  align-items: flex-start; 
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.leftBlockLogo {
+    margin-bottom: 10px;
+}
+
+/* Центральний блок */
+.centralBlockTitle {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.centralBlockText {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Правий блок */
+.rightBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 150px;
+}
+
+.rightBlockTitle {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.rightBlockIcons {
+  display: flex;
+  gap: 12px;
+}

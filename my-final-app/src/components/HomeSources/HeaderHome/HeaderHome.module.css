@@ -1,0 +1,237 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    width: 100%;
+}
+
+  
+  .leftMenu,
+  .rightMenu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .leftMenuTitles {
+    display: flex;
+    gap: 40px;
+    margin-left: 40px;
+  }
+  
+  .getUserName {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat Alternates";
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+.logOutBtn {
+    font-family: "Montserrat Alternates";
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #FFB36C;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.burgerIcon {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  margin: 0 auto;
+  margin-right: 100px;
+}
+
+.burgerMenu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 150px;
+  margin-right: 60px;
+} */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  width: 100%;
+}
+
+.leftMenu,
+.rightMenu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.leftMenuTitles {
+  display: flex;
+  gap: 40px;
+  margin-left: 40px;
+}
+
+.getUserName {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat Alternates";
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.logOutBtn {
+  font-family: "Montserrat Alternates";
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #FFB36C;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.burgerIcon {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  margin: 0 auto;
+  margin-right: 100px;
+}
+
+.burgerMenu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 150px;
+  margin-right: 60px;
+} 
+
+.burgerMenu.open {
+  transform: translateX(0);
+}
+
+@media (max-width: 700px) {
+  .desktopMenu {
+    display: none;
+  }
+
+  .leftMenuTitles {
+    display: none;
+  }
+
+  .userLogo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .getUserName {
+    color: black;
+    font-family: "Montserrat Alternates";
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .burgerIcon {
+    display: block;
+  }
+
+  .logOutBtn {
+    font-family: "Montserrat Alternates";
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #FFB36C;
+    padding: 6px 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .desktopMenu {
+    display: none;
+  }
+
+  .userLogo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .getUserName {
+    color: black;
+    font-family: "Montserrat Alternates";
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .burgerIcon {
+    display: block;
+  }
+
+  .logOutBtn {
+    font-family: "Montserrat Alternates";
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #FFB36C;
+    padding: 6px 16px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1101px) {
+  .burgerMenu {
+    display: none !important;
+  }
+}

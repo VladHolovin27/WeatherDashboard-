@@ -1,0 +1,80 @@
+.forecastInfoSection {
+  margin-top: 40px;
+  padding: 40px 20px;
+}
+
+.forecastInfoWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.forecastInfoCardsWrapper {
+  background-color: #E8E8E8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 50px;
+  border-radius: 20px; 
+}
+
+.forecastInfoCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);  
+  gap: 24px;
+  width: 100%;
+}
+
+.forecastInfoCard { 
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.forecastInfoCard:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.7);
+}
+
+.forecastInfoTitle {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.forecastInfoText {
+  font-family: "Montserrat Alternates";
+  font-size: 27px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.forecastInfoText:hover {
+  color: green;
+}
+
+.forecastInfoTitle:hover {
+  color: red;
+}
+
+.forecastCharacImg {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 1100px) {
+  .forecastInfoCardsWrapper {
+    max-width: 1000px;
+    margin-left: 30px
+  }
+}
+

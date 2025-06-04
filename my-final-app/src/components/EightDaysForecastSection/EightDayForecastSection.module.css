@@ -1,0 +1,98 @@
+.eightDayForeCastSection {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.eightDayForeCastSectionWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eightDayForeCastSectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 80px; 
+  background-color: #E8E8E8;
+  border-radius: 20px; 
+  padding: 20px 20px;
+}
+
+.eightDayForeCastSectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  font-family: "Montserrat";
+  text-align: left;
+  margin-left: 40px;
+}
+
+.eightDayForeCastSectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.eightDayForeCastSectionCards {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 1000px;
+  padding: 15px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.eightDayForeCastSectionCards:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.eightDayForeCastSectionCardInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.eightDayForeCastSectionCardInfoData {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2a2a2a;
+  margin-right: auto;
+  padding-left: 10px;
+  white-space: nowrap;
+}
+
+.eightDayForeCastSectionInfoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 20px;
+}
+
+.eightDayForeCastSectionCardImage {
+  width: 48px;
+  height: 48px;
+}
+
+.eightDayForeCastSectionCardText {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+  white-space: nowrap;
+  margin-left: auto;
+  padding-right: 10px;
+}
+
+@media (max-width: 1100px) {
+  .eightDayForeCastSectionWrapper {
+    max-width: 1000px;
+  }
+  .eightDayForeCastSectionCards {
+    max-width: 900px;
+  }
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.sunCardSection {
+    margin-top: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.sunCardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sunCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sunCard {
+    padding: 12px 20px;
+    background-color: rgb(232, 232, 232);
+    width: 350px;
+    height: 430px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.sunCard:hover {
+  transform: translateX(-7px);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.7);
+}
+
+.sunCardTitles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sunCardTitle {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sunCardTime {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.sunCardBtn {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 179, 108);
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.sunCardInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    height: 24px;
+}
+
+.sunCardData,
+.sunCardDay {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.sunCardLine {
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+
+.sunCardPhoto {
+    width: 120px;
+    height: 120px;
+}
+
+.sunCardDegree {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.sunCardIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.sunCardBtnToIcon {
+    background-color: rgb(232, 232, 232);
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.sunCardSeeMore {
+    border-radius: 10px;
+    background-color: rgb(255, 179, 108);
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1100px) {
+    .sunCard {
+        max-width: 500px;
+    }  
+}
+
+@media (max-width: 1000px) {
+    .sunCard:nth-child(3) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
