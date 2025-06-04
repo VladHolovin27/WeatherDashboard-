@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Autorization from './components/Autorization/Autarization'
 import WhoWeAre from './pages/WhoWeAre/WhoWeAre'
 import Contacts from './pages/Contacts/Contacts'
@@ -9,7 +9,6 @@ import Forecast from './pages/Forecast/Forecast'
 
 function App() {
   return (
-    <Router>
       <Routes>
         <Route path='/' element={<Autorization />}/>
         <Route path='/home' element={<Home />}/>
@@ -18,7 +17,6 @@ function App() {
         <Route path='/home/menu' element={<Menu />}/>
         <Route path='/forecast' element={<Forecast />}/>
       </Routes>
-    </Router>
   )
 }
 
