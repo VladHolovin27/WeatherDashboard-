@@ -60,3 +60,15 @@
   display: flex;
   gap: 12px;
 }
+
+@media (max-width: 507px) {
+  .rightBlock {
+    margin: auto;
+  }
+  .leftBlock {
+    margin: auto;
+  }
+  .centralBlock {
+    margin: auto;
+  }
+}

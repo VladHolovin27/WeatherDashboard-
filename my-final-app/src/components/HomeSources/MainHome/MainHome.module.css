@@ -49,3 +49,9 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@media (max-width: 507px) {
+    .verticalLine {
+    display: none;
+    }
+}

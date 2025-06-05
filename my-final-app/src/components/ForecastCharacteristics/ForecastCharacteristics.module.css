@@ -78,3 +78,19 @@
   }
 }
 
+@media (max-width: 507px) {
+  .forecastInfoCardsWrapper {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .forecastInfoCards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .forecastInfoCard {
+    width: 100%;
+  }
+}
